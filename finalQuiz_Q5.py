@@ -75,8 +75,8 @@ class edx(object):
         """
         #   fill in code to set the pset
         for i in range(len(self.myCourses)):
-            if self.myCourses[i] == course:
-                self.myCourses[i].setPset(pset, score)
+            if self.myCourses[i].courseName == course:
+                self.myCourses[i].setPset( pset, score)
             
     def getPset(self, pset, course="6.00x"):
         """
